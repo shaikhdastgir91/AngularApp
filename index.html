@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ERP Company Master UI</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="erp-shell">
+      <aside class="sidebar">
+        <div class="brand">Prasyst</div>
+        <div class="menu-search"><input type="text" placeholder="Search menus..." /></div>
+        <nav>
+          <a href="#">Dashboard</a>
+          <a href="#">Masters</a>
+          <a href="#">Inventory</a>
+          <a href="#">Accounts</a>
+          <a href="#">Ticketing</a>
+          <a href="#">Inventory Report</a>
+          <a href="#">Accounts Report</a>
+          <a href="#">HR & Operation</a>
+          <a href="#">Administrator</a>
+          <a href="#">Utility</a>
+          <a href="#">Reports</a>
+          <a href="#">Help</a>
+          <a href="#">UserPermission</a>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <header class="topbar">
+          <div class="company-title">KR APPAREL (5258)</div>
+          <div class="top-icons">
+            <span>🔔</span>
+            <span>📌</span>
+            <span>❔</span>
+            <span class="admin">Admin User</span>
+          </div>
+        </header>
+
+        <section class="panel">
+          <div class="panel-header">
+            <h1>Company Master</h1>
+            <div class="search-code">
+              <input type="text" placeholder="Search by Code" />
+              <button>🔎</button>
+            </div>
+          </div>
+
+          <div class="toolbar">
+            <button class="action">＋</button>
+            <button class="action">✎</button>
+            <button class="action">🗑</button>
+            <button class="action">🖨</button>
+            <button class="action">⎋</button>
+          </div>
+
+          <div class="tabs">
+            <button class="active">Main</button>
+            <button>Branch</button>
+          </div>
+
+          <form class="form-grid">
+            <label>CO_ID <input type="text" /></label>
+            <label>Company <input type="text" /></label>
+            <label>Abbrv <input type="text" /></label>
+
+            <label>Print Name <input type="text" /></label>
+            <label>GSTIN_NO <input type="text" /></label>
+            <label>Jurisdiction <input type="text" /></label>
+
+            <label>Address <input type="text" /></label>
+            <label>Work Addr <input type="text" /></label>
+            <label>Regd Addr <input type="text" /></label>
+
+            <label>Place <input type="text" /></label>
+            <label>Pincode <input type="text" /></label>
+            <label>TDS Details <input type="text" /></label>
+
+            <label>E Code <input type="text" /></label>
+            <label>PAN <input type="text" /></label>
+            <label>Tel <input type="text" /></label>
+
+            <label>TAN <input type="text" /></label>
+            <label>E-mail <input type="text" /></label>
+            <label>TDS Circle <input type="text" /></label>
+
+            <label>Website <input type="text" /></label>
+            <label>TDS Password <input type="password" /></label>
+            <label>Owner MobNo <input type="text" /></label>
+
+            <label>GST <input type="text" /></label>
+            <label>Excise Div <input type="text" /></label>
+            <label>VAT(TIN+dtl) <input type="text" /></label>
+          </form>
+
+          <div class="form-footer">
+            <label class="checkbox"><input type="checkbox" /> Active</label>
+            <div class="footer-actions">
+              <button type="button" class="submit">SUBMIT</button>
+              <button type="button" class="cancel">CANCEL</button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

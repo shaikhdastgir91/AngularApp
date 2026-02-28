@@ -1,0 +1,225 @@
+:root {
+  --blue: #0f67eb;
+  --bg: #f4f7fc;
+  --line: #dce3ef;
+  --text: #27364b;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #eef2f8;
+  color: var(--text);
+}
+
+.erp-shell {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  min-height: 100vh;
+}
+
+.sidebar {
+  background: #fff;
+  border-right: 1px solid var(--line);
+  padding: 22px;
+}
+
+.brand {
+  font-size: 34px;
+  font-weight: 700;
+  color: var(--blue);
+  margin-bottom: 18px;
+}
+
+.menu-search input {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  height: 42px;
+  padding: 0 14px;
+  margin-bottom: 14px;
+}
+
+nav {
+  display: grid;
+  gap: 6px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #2f3f59;
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+
+nav a:hover {
+  background: #edf3ff;
+  color: var(--blue);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  background: var(--blue);
+  color: #fff;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+
+.top-icons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.admin {
+  opacity: 0.9;
+  font-size: 13px;
+}
+
+.panel {
+  margin: 20px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 18px;
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.panel-header h1 {
+  margin: 0;
+  font-size: 26px;
+}
+
+.search-code {
+  display: flex;
+}
+
+.search-code input {
+  border: 1px solid var(--line);
+  height: 38px;
+  width: 180px;
+  padding: 0 10px;
+}
+
+.search-code button {
+  border: 1px solid var(--line);
+  border-left: 0;
+  width: 42px;
+  background: #f2f6ff;
+}
+
+.toolbar {
+  margin-top: 16px;
+  display: flex;
+  gap: 8px;
+}
+
+.action {
+  border: 0;
+  background: var(--blue);
+  color: #fff;
+  border-radius: 6px;
+  width: 54px;
+  height: 34px;
+}
+
+.tabs {
+  display: flex;
+  margin-top: 16px;
+  border-bottom: 1px solid var(--line);
+}
+
+.tabs button {
+  border: 0;
+  background: transparent;
+  padding: 10px 18px;
+  font-weight: 600;
+  color: #58708f;
+}
+
+.tabs .active {
+  color: var(--blue);
+  border-bottom: 2px solid var(--blue);
+}
+
+.form-grid {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+label {
+  display: grid;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #5d6f88;
+}
+
+label input {
+  height: 34px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 0 8px;
+}
+
+.form-footer {
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.submit,
+.cancel {
+  border: 0;
+  background: #f3f6fb;
+  color: #335;
+  border-radius: 4px;
+  padding: 9px 18px;
+  font-weight: 600;
+}
+
+.submit {
+  background: #ebf2ff;
+  color: #0e5de4;
+}
+
+@media (max-width: 1180px) {
+  .erp-shell {
+    grid-template-columns: 220px 1fr;
+  }
+
+  .form-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
